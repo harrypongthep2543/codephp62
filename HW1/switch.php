@@ -1,31 +1,26 @@
 <?php
-$a = 5;
+$a = 60;
+//$a
 switch ($a) {
-    case 5:
-        echo "a equal 5";
+    case 5: ($a >= 80) ;
+        echo "Grade A";
        break;
-    case ($a > 3 && $a < 6):
-        echo "a gt 5";
+    case ($a >= 75):
+        echo "Grade B+";
         break;
-    case ($a < 5):
-        echo "a less 5";
+    case ($a >= 70) :
+        echo "Grade B";
+        break;
+    case ($a >= 60):
+        echo "Grade C";
+        break;
+    case ($a >= 55):
+        echo "Grade D+";
+        break;
+    case ($a >= 50) :
+        echo "Grade D";
         break;
     default:
-        echo "default";
+        echo "Grade F";
         break;
 }
-<?php
-$score = 70;
-
-if( $score >= 80 ){
-     echo "คุณได้เกรด A";
-}else if( $score >= 70 && $score < 80 ){
-     echo "คุณได้เกรด B";
-}else if( $score >= 60 && $score < 70 ){
-     echo "คุณได้เกรด D";
-}else if( $score >= 50 && $score < 60 ){
-     echo "คุณได้เกรด D";
-}else{
-     echo "คุณสอบตก";
-}
-?>
